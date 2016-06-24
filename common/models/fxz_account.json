@@ -1,0 +1,54 @@
+{
+  "name": "fxz_account",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "reg_data": {
+      "type": "date"
+    },
+    "telephone": {
+      "type": "number"
+    },
+    "city": {
+      "type": "string"
+    },
+    "province": {
+      "type": "string"
+    },
+    "age": {
+      "type": "number"
+    },
+    "gnant_num": {
+      "type": "number"
+    },
+    "pregnant_num": {
+      "type": "number"
+    },
+    "true_name": {
+      "type": "string"
+    },
+    "birthday": {
+      "type": "date"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {
+    "getUsers": {
+     "isStatic": true,
+     "description": "获取这birthday字段存在的用户",
+     "notes": "获取字段reg_data telephone city province age gnant_num pregnant_num true_name birthday id",
+     "returns": {
+       "arg": "userList",
+       "type": "json"
+     },
+     "http": {
+       "verb": "get"
+     }
+   }
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "mysql": {
+    "host": "101.200.197.79",
+    "port": 3306,
+    "database": "xgjt",
+    "password": "root",
+    "name": "mysql",
+    "user": "root",
+    "connector": "mysql",
+    "charset": "UTF-8"
+  },
+  "mongodb": {
+    "host": "127.0.0.1",
+    "port": 27017,
+    "database": "local",
+    "password": "",
+    "name": "mongodb",
+    "user": "",
+    "connector": "mongodb"
+  }
+}
